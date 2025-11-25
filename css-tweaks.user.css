@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name           My Styles
+@namespace      github.com/adjoint-functor/web-tweaks
+@version        1.0.0
+@description    Shared styles
+@author         Me
+==/UserStyle== */
+
 @-moz-document domain("brilliant.org") {
 
 body > div:first-child > div:first-child:not(.chakra-stack) {
