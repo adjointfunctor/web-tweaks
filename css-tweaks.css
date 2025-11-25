@@ -1,0 +1,58 @@
+@-moz-document domain("brilliant.org") {
+
+body > div:first-child > div:first-child:not(.chakra-stack) {
+	& > div:first-child {
+		position: fixed;
+
+		&:not(:hover) {
+			display: inline-block;
+			width: auto;
+			padding: 0;
+			background: transparent;
+			opacity: 0.5;
+			box-shadow: none;
+
+			& > button {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+			}
+
+			& > div:first-of-type {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50px;
+				outline: 1px solid black;
+			}
+			
+			& > div:nth-of-type(2) {
+				display: none;
+			}
+		}
+	}
+	
+	& > div:nth-of-type(2) {
+		height: calc(100dvh - var(--safe-area-inset-top));
+
+		& > div:first-child {
+			& > div:first-child {
+				margin-bottom: 80px;
+			}
+			
+			& > div ~ div:last-of-type {
+				position: fixed;
+				bottom: 0px;
+				border-top-width: 0;
+				background: transparent;
+				pointer-events: none;
+				
+				& > button {
+					margin-right: 150px;
+					pointer-events: auto;
+				}
+			}
+		}
+	}
+}
+}
