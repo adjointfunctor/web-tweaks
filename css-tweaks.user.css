@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           My Styles
 @namespace      github.com/adjoint-functor/web-tweaks
-@version        1.0.1
+@version        1.0.2
 @description    Shared styles
 @author         Me
 ==/UserStyle== */
@@ -23,6 +23,7 @@ body > div:first-child > div:first-child:not(.chakra-stack) {
 				display: inline-block;
 				width: 16px;
 				height: 16px;
+				min-width: auto;
 				padding-left: 2px;
 			}
 
