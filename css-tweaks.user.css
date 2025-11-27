@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           My Styles
 @namespace      github.com/adjoint-functor/web-tweaks
-@version        1.0.2
+@version        1.0.3
 @description    Shared styles
 @author         Me
 ==/UserStyle== */
@@ -21,20 +21,26 @@ body > div:first-child > div:first-child:not(.chakra-stack) {
 
 			& > button {
 				display: inline-block;
-				width: 16px;
-				height: 16px;
+				width: 12px;
+				height: 12px;
 				min-width: auto;
-				padding-left: 2px;
+				padding-left: 0px;
+				border: 0px;
+				
+				& > svg {
+					width: 12px;
+					height: 12px;
+				}
 			}
 
 			& > div:first-of-type {
 				position: fixed;
 				top: 0;
 				left: 0;
-				height: 20px;
+				height: 12px;
 				width: 100vh;
 
-				transform: rotate(90deg) translateY(-20px);
+				transform: rotate(90deg) translateY(-12px);
 				transform-origin: top left;
 				pointer-events: none;
 				z-index: -1;
