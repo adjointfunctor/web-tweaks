@@ -7,7 +7,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("brilliant.org") {
-
 body > div:first-child > div:first-child:not(.chakra-stack) {
 	& > div:first-child {
 		position: fixed;
@@ -63,4 +62,5 @@ body > div:first-child > div:first-child:not(.chakra-stack) {
 		}
 	}
 }
+
 }
